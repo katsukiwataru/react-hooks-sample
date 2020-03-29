@@ -6,7 +6,7 @@ const Checkbox = ({ value, onClick }: { value: boolean; onClick: () => void }) =
   return (
     <div style={{ cursor: 'pointer' }} onClick={onClick}>
       {value ? '☑' : '□'}
-      <p>hiogehogheo</p>
+      <p>Checkbox click</p>
     </div>
   );
 };
@@ -17,7 +17,7 @@ export const Wrap = () => {
   const toggleChecked = useCallback(() => setIsChecked(!isChecked), [isChecked]);
 
   // eslint-disable-next-line no-console
-  console.log(isChecked);
+  console.log('Wrap is renderd!', isChecked);
 
   return (
     <div>

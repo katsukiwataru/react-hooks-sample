@@ -6,7 +6,7 @@ interface Props {
 
 export const Test: React.FC<Props> = ({ wrap }) => {
   // eslint-disable-next-line no-console
-  console.log(wrap);
+  console.log('wrap', 'Test');
   return (
     <div>
       {wrap}
